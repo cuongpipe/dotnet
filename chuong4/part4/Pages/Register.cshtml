@@ -1,0 +1,22 @@
+@page
+@model part4.Pages.RegisterModel
+
+<h2>Register Account</h2>
+<form method="post">
+    <label asp-for="User.Username"></label>
+    <input type="text" asp-for="User.Username" />
+    <span asp-validation-for="User.Username" class="text-danger"></span>
+    <br/>
+
+    <label asp-for="User.Email"></label>
+    <input type="email" asp-for="User.Email" />
+    <span asp-validation-for="User.Email" class="text-danger"></span>
+    <br/>
+
+    <label asp-for="User.Password"></label>
+    <input type="password" asp-for="User.Password" />
+    <span asp-validation-for="User.Password" class="text-danger"></span>
+    <br/>
+
+    <button type="submit">Register</button>
+</form>

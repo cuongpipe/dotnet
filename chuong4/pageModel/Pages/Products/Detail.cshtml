@@ -1,0 +1,25 @@
+@* @page "{{id:init}}"
+@model DetailModel
+@{
+    ViewData["Title"] = @Model.Produts.Name;
+}
+<h1>Chi tiết sản phẩm</h1>
+
+@if (Model.Product != null)
+{
+    <div> 
+        <h4>@Model.Product.Name</h4>
+            @Model.Product.id
+            @Model.Prodcut.Price.ToString("c")
+
+    </div>
+}
+else
+{
+    <div>
+        <h4>Không tìm thấy sản phẩm</h4>
+    </div>
+}
+<div>
+ <a asp-page="./Index">Quay lại danh sách sản phẩm</a>
+</div> *@
