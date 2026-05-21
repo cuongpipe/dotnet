@@ -45,3 +45,11 @@ git commit -m "init clean"
 git branch -M main
 git remote add origin https://github.com/longliora/dotnet
 git push -u origin main --force
+
+
+## cái entity framework enity
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+Sau khi cài xong, có thể chạy lệnh dotnet list package để kiểm tra:
